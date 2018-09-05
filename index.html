@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gonzalo's Portfolio</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Open+Sans|Rammetto+One|Sigmar+One|Slabo+27px|Roboto" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script>
+
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+    // document ready
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+						block:'start'
+        });
+    });
+});
+  }
+};
+</script>
+</head>
+
+<body>
+<div class="navbar">
+	<div class="links">
+		<a href="#intro">Intro</a>
+		<a href="#about">About Me</a>
+		<a href="#reel">My Reel</a>
+		<a href="#interests">My Interests</a>
+	</div>
+</div>
+<section id="intro">
+	    <img src="assets/gonzo.jpg" alt="profile"/>
+			<h1 id="profileName" class="sectionTitle">GONZALO ROCHA</h1>
+			<div class="description">
+			  <p>I am a communications science graduate from Jalisco, Mexico. Currently I am teaching Communication and ESL at Universidad de Guadalajara. In my spare time I host a film club every semester on the local University Museum.</p>
+			  <h2>What makes me stand out:</h2>
+				<div class="listContainer">
+					<div class="listItem">
+						<h1>Web Design</h1>
+						<p>Since I was very little I have been interested in computers.</p>
+					</div>
+					<div class="listItem">
+						<h1>ESL</h1>
+						<p>I have been teaching english as a second language for 5 years now.</p>
+					</div>
+					<div class="listItem">
+					  <h1>Radio</h1>
+						<p>One of the things that got me interested in storytelling was radio. For a little while I was a collaborator with a local radio show about film called Rodaje. It airs in XHUGG, the universitiy adio.</p>
+					</div>
+				</div>
+			</div>
+
+	</section>
+
+	<section id="about">
+		  <h1 class="sectionTitle">About Me</h1>
+		  <iframe src="https://player.vimeo.com/video/282124929" width="640" height="486" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</section>
+
+	<section id="reel">
+		<h1 class="sectionTitle">My Reel</h1>
+		<div id="videosContainer">
+			<div class="mainVideo" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/97610630?color=ffffff" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+			<div class="secondaryVideoContainer">
+				<div class="secondaryVideo"><iframe src="https://player.vimeo.com/video/97241303?color=ffffff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+				<div class="secondaryVideo"><iframe src="https://player.vimeo.com/video/129980105?color=ffffff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+			</div>
+
+			<div class="mainVideo"><iframe src="https://player.vimeo.com/video/282124929?color=ffffff" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+		</div>
+		<div class="moreVimeo">
+			<em class="fab fa-vimeo fa-2x"></em><span>More on Vimeo: <a href="http://vimeo.com/medicengonzo">@medicengonzo</a></span>
+		</div>
+		</section>
+
+
+	<section id="interests">
+	<h1 class="sectionTitle">MY INSTERESTS</h1>
+	<div class="listContainer">
+		<div class="listItem">
+			<span class="icon"><i class="fas fa-film fa-4x"></i></span>
+			<h1>Directing</h1>
+			<p>Ever since my first time at the movies.</p>
+		</div>
+		<div class="listItem">
+			<span class="icon"><i class="fas fa-pen-nib fa-4x"></i></span>
+			<h1>Screenwriting</h1>
+			<p>I always wanted to tell stories.</p>
+		</div>
+		<div class="listItem">
+			<span class="icon"><i class="fas fa-camera-retro fa-4x"></i></span>
+			<h1>Cinematography</h1>
+			<p>I remember my first camera.</p>
+		</div>
+	</div>
+		</section>
+
+	<footer>
+		<p>Web Design by @medicengonzo</p>
+	</footer>
+</body>
+</html>
