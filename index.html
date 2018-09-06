@@ -6,6 +6,7 @@
 <link href="style.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Open+Sans|Rammetto+One|Sigmar+One|Slabo+27px|Roboto" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link href="grid12.css" rel="stylesheet" type="text/css">
 <script>
 
 document.onreadystatechange = () => {
@@ -66,16 +67,27 @@ document.onreadystatechange = () => {
 
 	<section id="reel">
 		<h1 class="sectionTitle">My Reel</h1>
-		<div id="videosContainer">
-			<div class="mainVideo" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/97610630?color=ffffff" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-			<div class="secondaryVideoContainer">
-				<div class="secondaryVideo"><iframe src="https://player.vimeo.com/video/97241303?color=ffffff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-				<div class="secondaryVideo"><iframe src="https://player.vimeo.com/video/129980105?color=ffffff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+	<div class="container">
+    	<div class="row Video1">
+        	<div class="col-md-12">
+				<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/97610630?color=ffffff" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div><script src="https://player.vimeo.com/api/player.js"></script>
 			</div>
-
-			<div class="mainVideo"><iframe src="https://player.vimeo.com/video/282124929?color=ffffff" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 		</div>
+		<div class="row Videos2">
+			<div class="col-md-6">
+				<div style="margin:10px 0; padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/97241303?color=ffffff" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+			</div>
+			<div class="col-md-6">
+				<div style="margin:10px 0; padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/129980105?color=ffffff" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/282124929?color=ffffff" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div><script src="https://player.vimeo.com/api/player.js"></script></div>
+		</div>
+	</div>
 		<div class="moreVimeo">
 			<em class="fab fa-vimeo fa-2x"></em><span>More on Vimeo: <a href="http://vimeo.com/medicengonzo">@medicengonzo</a></span>
 		</div>
