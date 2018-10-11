@@ -2,7 +2,8 @@
 
 .navbar {
   overflow: hidden;
-  background-color: #f38630;
+  background-color: #fff;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
   position: fixed;
   top: 0;
   height: 50px;
@@ -44,9 +45,8 @@ section {
   height: auto;
   width: 100%;
   padding-bottom: 1%;
-	color:white;
+  color: white;
 }
-
 
 section:nth-of-type(2n) {
   background-color: white;
@@ -115,8 +115,7 @@ section#intro p {
   display: inline;
 }
 
-@media (max-width: 902px){
-	
+@media (max-width: 902px) {
 }
 
 #videosContainer {
@@ -125,7 +124,7 @@ section#intro p {
   flex-direction: column;
 }
 div.mainVideo {
-	position:relative; 
+  position: relative;
 }
 
 iframe {
@@ -133,7 +132,6 @@ iframe {
 }
 
 div.secondaryVideoContainer {
-
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -144,12 +142,12 @@ div.secondaryVideo {
   position: relative;
   margin-right: 0.5%;
 }
-.secondaryVideo iframe{
-	border-style:dashed;
-	position:relative;
-	top:0;
-	margin-top: 0px;
-	width:100%;
+.secondaryVideo iframe {
+  border-style: dashed;
+  position: relative;
+  top: 0;
+  margin-top: 0px;
+  width: 100%;
 }
 
 .secondaryVideo:nth-of-type(2n) {
@@ -164,10 +162,10 @@ div.secondaryVideo iframe {
   height: 100%;
 }
 
-@media (max-width: 902px){
-	div.secondaryVideoContainer {
-  		flex-direction: column;
-	}
+@media (max-width: 902px) {
+  div.secondaryVideoContainer {
+    flex-direction: column;
+  }
 }
 
 footer {
@@ -180,24 +178,24 @@ footer {
 }
 
 .moreVimeo em {
-	float:left;
-	display: block;
+  float: left;
+  display: block;
 }
 
 .moreVimeo span {
-	float:right;
-	display:block;
-	margin: 5px 10px;
+  float: right;
+  display: block;
+  margin: 5px 10px;
 }
 
 .moreVimeo {
-	margin:1% 0 0;
+  margin: 1% 0 0;
 }
 
 .description h2 {
-	font-family: 'Bungee', sans-serif;
-	font-size:2em;
-	color: white;
+  font-family: "Bungee", sans-serif;
+  font-size: 2em;
+  color: white;
 }
 
 .listContainer {
@@ -205,7 +203,7 @@ footer {
 }
 
 .listContainer h1 {
-	font-family: "Sigmar One", cursive;
+  font-family: "Sigmar One", cursive;
 }
 
 .listContainer p {
@@ -214,7 +212,7 @@ footer {
 
 .listItem {
   width: 250px;
-  text-align:center;
+  text-align: center;
 }
 .listItem h1 {
   width: 100%;
@@ -228,32 +226,29 @@ footer {
 
 #reelWrapper {
   display: grid;
-	grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, minmax(150px,auto));
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, minmax(150px, auto));
   grid-gap: 10px;
-  max-width:960px;
+  max-width: 960px;
   margin: 0 auto;
 }
-	
 
 #reelWrapper div:nth-child(3n-5) {
-			grid-column: 1 / 3;
-			content: 'third';
+  grid-column: 1 / 3;
+  content: "third";
 }
-	
+
 .vimeo {
-	padding:56.25% 0 0 0;
-	position:relative;
+  padding: 56.25% 0 0 0;
+  position: relative;
 }
 
-@media (max-width: 992px){
-	#reelWrapper {
-		display: flex;
-		flex-direction: column;
-	}
-	#reelWrapper div {
-		margin: 3px;
-	}
+@media (max-width: 992px) {
+  #reelWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  #reelWrapper div {
+    margin: 3px;
+  }
 }
-
-
