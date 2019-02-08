@@ -227,6 +227,14 @@ footer {
   text-align: center;
 }
 
+.postersContainer {
+  display: flex;
+}
+
+.poster img {
+  margin: 30px;
+}
+
 #reelWrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
