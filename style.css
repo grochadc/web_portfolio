@@ -35,7 +35,7 @@ body {
 }
 
 a {
-  color: #95a293;
+  color: #c3cad9;
 }
 
 section {
@@ -212,7 +212,8 @@ footer {
 
 .listItem {
   width: 250px;
-  text-align: center;
+  text-align: left;
+  margin: 15px 35px 15px 35px;
 }
 .listItem h1 {
   width: 100%;
